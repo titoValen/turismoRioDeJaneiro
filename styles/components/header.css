@@ -1,0 +1,40 @@
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    width: 195px;
+    height: 55px;
+}
+
+header nav ul li a {
+    height: 100%;
+    background: #3D19B7;
+    color: #dfe2e9;
+    border-radius: 4rem;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    box-shadow: 0 0 16px #3D19B7;
+}
