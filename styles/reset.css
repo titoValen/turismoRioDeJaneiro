@@ -12,7 +12,8 @@ h4 {
 }
 
 p,
-a {
+a,
+span {
     font-family: "Poppins", sans-serif;
 }
 
