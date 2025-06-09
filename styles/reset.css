@@ -1,3 +1,15 @@
+:root {
+    --color-morado: #3d19b7;
+    --color-blanco: #dfe2e9;
+    --color-negro: #1b1b1b;
+    --color-celeste: #78c9d4;
+    --color-amarillo: #e7ff28;
+    --color-verde: #0b5831;
+    --color-rojo: #f3302f;
+    --font-titulo: font-family: "Manrope", sans-serif;
+    --font-parrafos: font-family: "Poppins", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,4 +47,14 @@ input {
 
 textarea {
     resize: none;
+}
+
+.container-extenso {
+    width: 1284px;
+    margin: 0 auto;
+}
+
+.contaienr-corto {
+    width: 1183px;
+    margin: 0 auto;
 }

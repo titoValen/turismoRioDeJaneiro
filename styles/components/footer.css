@@ -1,0 +1,39 @@
+footer {
+  background: var(--color-morado);
+  color: var(--color-blanco);
+  padding: 1rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .container .redesSociales h3 {
+  text-align: center;
+}
+
+footer .container figure img {
+  width: 150px;
+}
+
+footer .container .redesSociales h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .container .redesSociales figure {
+  display: flex;
+  gap: 3rem;
+}
+
+footer .container .redesSociales figure img {
+  width: 60px;
+  height: auto;
+}
+
+footer .copyright {
+  display: block;
+  text-align: center;
+}
