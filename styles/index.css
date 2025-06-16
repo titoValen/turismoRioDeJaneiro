@@ -1,3 +1,62 @@
+.background {
+  background-image: url(/img/fondoPlaya.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  position: absolute;
+  inset: 0;
+}
+
+/* Header */
+
+.presentacion {
+  height: 100vh;
+}
+
+.presentacion header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentacion header figure {
+  width: 150px;
+}
+
+.presentacion header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.presentacion header nav ul li {
+  width: 175px;
+  height: 45px;
+}
+
+.presentacion header nav ul li a {
+  height: 100%;
+  width: 100%;
+  background: var(--color-morado);
+  color: var(--color-blanco);
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.presentacion header nav ul li a:hover {
+  box-shadow: 0 0 16px var(--color-morado);
+}
+
+.presentacion header nav ul li a:active {
+  scale: 1.05;
+}
+
 .presentacion .container-extenso .txt {
   width: 570px;
   position: absolute;
@@ -11,5 +70,98 @@
   color: var(--color-blanco);
   font-size: 2.8rem;
   font-weight: 800;
+  text-align: center;
+}
+
+/* Separador */
+
+.separador {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Section */
+
+section {
+  height: 100vh;
+}
+
+/* Section -> Porque Río de Janeiro */
+
+#porQue {
+  background: var(--color-morado);
+  color: var(--color-blanco);
+}
+
+#porQue .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+#porQue .container .txt {
+  width: 600px;
+  padding: 2rem;
+  display: grid;
+  gap: 0.8125rem;
+}
+
+#porQue .container .txt h2 {
+  font-size: 1.8125rem;
+}
+
+#porQue .container .txt p {
+  font-size: 1.1875rem;
+}
+
+#porQue .container .img {
+  width: 500px;
+}
+
+#porQue .container .img img {
+  border-radius: .5rem;
+}
+
+/* Footer */
+
+footer {
+  background: var(--color-morado);
+  color: var(--color-blanco);
+  padding: 1rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .container .redesSociales h3 {
+  text-align: center;
+}
+
+footer .container figure img {
+  width: 150px;
+}
+
+footer .container .redesSociales h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .container .redesSociales figure {
+  display: flex;
+  gap: 3rem;
+}
+
+footer .container .redesSociales figure img {
+  width: 60px;
+  height: auto;
+}
+
+footer .copyright {
+  display: block;
   text-align: center;
 }
