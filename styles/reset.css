@@ -21,12 +21,14 @@ h2,
 h3,
 h4 {
     font-family: "Manrope", sans-serif;
+    color: var(--color-negro);
 }
 
 p,
 a,
 span {
     font-family: "Poppins", sans-serif;
+    color: var(--color-negro);
 }
 
 a {
