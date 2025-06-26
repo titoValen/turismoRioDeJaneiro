@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Now-Regular";
+    src: url(../fonts/Now/Now-Regular.otf);
+}
+
+@font-face {
+    font-family: "Garet-Regular";
+    src: url(../fonts/Garet/Garet-Book.woff);
+}
+
 :root {
     --color-morado: #3d19b7;
     --color-blanco: #dfe2e9;
@@ -6,8 +16,8 @@
     --color-amarillo: #e7ff28;
     --color-verde: #0b5831;
     --color-rojo: #f3302f;
-    --font-titulo: font-family: "Manrope", sans-serif;
-    --font-parrafos: font-family: "Poppins", sans-serif;
+    --font-titulo: "Now-Regular", sans-serif;
+    --font-parrafos: "Garet-Regular", sans-serif;
 }
 
 * {
@@ -20,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-titulo);
     color: var(--color-negro);
 }
 
@@ -29,6 +39,11 @@ a,
 span {
     font-family: "Poppins", sans-serif;
     color: var(--color-negro);
+}
+
+p,
+span {
+    font-family: var(--font-parrafos);
 }
 
 a {
