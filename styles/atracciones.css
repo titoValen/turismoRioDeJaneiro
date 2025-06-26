@@ -40,8 +40,8 @@ header nav ul li a:active {
     scale: 1.05;
 }
 
-/* Footer */
 
+/* Footer */
 footer {
     background: var(--color-morado);
     color: var(--color-blanco);
