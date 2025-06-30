@@ -67,11 +67,11 @@ textarea {
 }
 
 .container-extenso {
-    width: 1284px;
+    max-width: 1284px;
     margin: 0 auto;
 }
 
 .container-corto {
-    width: 1183px;
+    max-width: 1183px;
     margin: 0 auto;
 }
