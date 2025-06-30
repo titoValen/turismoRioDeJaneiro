@@ -48,7 +48,7 @@ header nav ul li a:active {
 .container-corto section {
     display: flex;
     gap: 1rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem;
     height: 100vh;
 }
 
@@ -128,4 +128,36 @@ footer .copyright {
     display: block;
     text-align: center;
     color: var(--color-blanco);
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .container-corto section :is(.txt, figure) {
+        width: 100%;
+    }
+
+    .container-corto :is(section, section:nth-child(even)) {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    footer .container .redesSociales figure {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 250px;
+    }
+
+    footer .copyright {
+        margin-top: 1rem;
+    }
+}
+
+/* Celulares grandes y tablets verticales */
+@media (max-width: 767px) {}
+
+/* Tablets y notebooks pequeños */
+@media (max-width: 1024px) {
+    .container-extenso header nav {
+        display: none;
+    }
 }
