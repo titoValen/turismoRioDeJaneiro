@@ -11,7 +11,6 @@
 }
 
 /* Header */
-
 .presentacion {
   height: 100vh;
 }
@@ -58,11 +57,11 @@
 }
 
 .presentacion .container-extenso .txt {
-  width: 570px;
+  max-width: 570px;
   position: absolute;
   display: flex;
-  left: 15%;
-  bottom: 30%;
+  left: 10%;
+  bottom: 15%;
 }
 
 .presentacion .container-extenso .txt span {
@@ -75,13 +74,11 @@
 }
 
 /* Section */
-
 section {
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 /* Section -> Porque Río de Janeiro */
-
 #porQue {
   background: var(--color-morado);
   color: var(--color-blanco);
@@ -91,11 +88,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #porQue .container .txt {
-  width: 600px;
+  max-width: 600px;
   padding: 2rem;
   display: grid;
   gap: 0.8125rem;
@@ -114,7 +111,8 @@ section {
 }
 
 #porQue .container .img {
-  width: 500px;
+  max-width: 500px;
+  margin: 1rem;
 }
 
 #porQue .container .img img {
@@ -122,7 +120,6 @@ section {
 }
 
 /* Section -> Galeria */
-
 #galeria h2 {
   text-align: center;
   font-size: 1.8125rem;
@@ -158,6 +155,7 @@ section {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-20%);
   }
@@ -167,13 +165,13 @@ section {
   0% {
     transform: translateX(-20%);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
 
 /* Footer */
-
 footer {
   background: var(--color-morado);
   color: var(--color-blanco);
@@ -214,4 +212,40 @@ footer .copyright {
   display: block;
   text-align: center;
   color: var(--color-blanco);
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  #porQue .container {
+    flex-direction: column;
+  }
+
+  footer .container .redesSociales figure {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 250px;
+  }
+
+  footer .copyright {
+    margin-top: 1rem;
+  }
+}
+
+/* Celulares grandes y tablets verticales */
+@media (max-width: 767px) {
+  .presentacion .container-extenso .txt {
+    left: 0;
+    bottom: 27%;
+  }
+
+  .presentacion .container-extenso .txt span {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets y notebooks pequeños */
+@media (max-width: 1024px) {
+  .presentacion .container-extenso header nav {
+    display: none;
+  }
 }
