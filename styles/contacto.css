@@ -41,6 +41,76 @@ header nav ul li a:active {
     scale: 1.05;
 }
 
+/* Contacto */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+main :is(.txt, .container-form) {
+    width: 50%;
+}
+
+main .txt h2 {
+    font-size: 2.25rem;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .container-form form {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+}
+
+main .container-form form label {
+    display: block;
+    margin: 0.7rem 0;
+    font-family: var(--font-parrafos);
+}
+
+main .container-form form :is(input, textarea) {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+
+main .container-form form textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+main .container-form form #btn-submit {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--color-morado);
+    color: var(--color-blanco);
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .container-form form #btn-submit:hover {
+    background: transparent;
+    color: var(--color-morado);
+    outline: 1px solid var(--color-morado);
+}
+
+main .container-form form #btn-submit:active {
+    scale: 1.02;
+}
+
 /* Footer */
 
 footer {
