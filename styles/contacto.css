@@ -44,7 +44,7 @@ header nav ul li a:active {
 /* Contacto */
 
 .container-corto {
-    width: 1000px;
+    max-width: 1000px;
 }
 
 main {
@@ -58,9 +58,17 @@ main :is(.txt, .container-form) {
     width: 50%;
 }
 
+/* Texto de contacto */
+
 main .txt h2 {
     font-size: 2.25rem;
 }
+
+main .txt p {
+    margin-top: .5rem;
+}
+
+/* Formulario */
 
 .container-form {
     display: flex;
@@ -75,15 +83,10 @@ main .container-form form {
     padding: 1rem;
 }
 
-/* Contenedor para nombre y email en la misma fila */
 .container-nombre-email {
     display: flex;
     gap: 1rem;
-    margin-bottom: 0.7rem;
-}
-
-.container-nombre-email > div {
-    flex: 1;
+    margin-bottom: .7rem;
 }
 
 .container-nombre-email label {
@@ -92,13 +95,13 @@ main .container-form form {
 
 main .container-form form label {
     display: block;
-    margin: 0.7rem 0 0.3rem 0;
+    margin: .7rem 0 .3rem 0;
     font-family: var(--font-parrafos);
 }
 
 main .container-form form :is(input, textarea, select) {
     width: 100%;
-    padding: 0.5rem;
+    padding: .5rem;
     border-radius: .5rem;
     border: 1px solid black;
 }
@@ -111,7 +114,7 @@ main .container-form form textarea {
 main .container-form form #btn-submit {
     width: 100%;
     margin-top: .7rem;
-    padding: 0.5rem;
+    padding: .5rem;
     background: var(--color-morado);
     color: var(--color-blanco);
     border-radius: .5rem;
@@ -173,4 +176,35 @@ footer .copyright {
     display: block;
     text-align: center;
     color: var(--color-blanco);
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    footer .container .redesSociales figure {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 250px;
+    }
+
+    footer .copyright {
+        margin-top: 1rem;
+    }
+}
+
+/* Celulares grandes y tablets verticales */
+@media (max-width: 767px) {
+    .container-corto main {
+        flex-direction: column;
+    }
+
+    main :is(.txt, .container-form) {
+        width: 100%;
+    }
+}
+
+/* Tablets y notebooks pequeños */
+@media (max-width: 1024px) {
+    .container-extenso header nav {
+        display: none;
+    }
 }
