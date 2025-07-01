@@ -44,6 +44,95 @@ header nav ul li a:active {
     scale: 1.05;
 }
 
+/* Header responsive */
+
+.check {
+    display: none;
+}
+
+.hamburger-button {
+    display: none;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    margin: 0 1rem;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.hamburger-button div {
+    width: 70px;
+    height: 10px;
+    background-color: var(--color-negro);
+    border-radius: 3px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.line1 {
+    top: 0;
+}
+
+.line2 {
+    top: calc(40%);
+}
+
+.line3 {
+    top: calc(80%);
+}
+
+.hamburger-button:hover div {
+    width: 54.2857143%;
+}
+
+.hamburger-button:hover .line1 {
+    transform: translate(31.5px, 12px) rotate(35deg);
+    border-radius: 7px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hamburger-button:hover .line3 {
+    transform: translate(31.5px, -12px) rotate(-35deg);
+    border-radius: 7px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.check:checked~.hamburger-button:hover .line1 {
+    transform: translate(0, 12px) rotate(-35deg);
+    border-radius: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.check:checked~.hamburger-button:hover .line3 {
+    transform: translate(0, -12px) rotate(35deg);
+    border-radius: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.check:checked~.hamburger-button:hover .line2 {
+    margin-left: 32px;
+}
+
+@media (max-width: 1024px) {
+    .hamburger-button, .mobile-menu {
+        display: block;
+    }
+}
+
+/* Menú */
+
+.mobile-menu {
+    display: none;
+}
+
+.check:checked ~ .mobile-menu {
+    display: block;
+}
+
 /* section */
 .container-corto section {
     display: flex;
