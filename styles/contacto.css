@@ -43,6 +43,10 @@ header nav ul li a:active {
 
 /* Contacto */
 
+.container-corto {
+    width: 1000px;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -71,13 +75,28 @@ main .container-form form {
     padding: 1rem;
 }
 
+/* Contenedor para nombre y email en la misma fila */
+.container-nombre-email {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.container-nombre-email > div {
+    flex: 1;
+}
+
+.container-nombre-email label {
+    display: block;
+}
+
 main .container-form form label {
     display: block;
-    margin: 0.7rem 0;
+    margin: 0.7rem 0 0.3rem 0;
     font-family: var(--font-parrafos);
 }
 
-main .container-form form :is(input, textarea) {
+main .container-form form :is(input, textarea, select) {
     width: 100%;
     padding: 0.5rem;
     border-radius: .5rem;
@@ -91,6 +110,7 @@ main .container-form form textarea {
 
 main .container-form form #btn-submit {
     width: 100%;
+    margin-top: .7rem;
     padding: 0.5rem;
     background: var(--color-morado);
     color: var(--color-blanco);
