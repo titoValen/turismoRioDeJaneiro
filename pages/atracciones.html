@@ -22,7 +22,7 @@
                     <img src="../img/mascara.png" alt="Logo de RioMagico">
                 </figure>
             </a>
-            <nav>
+            <nav class="desktop-menu">
                 <ul>
                     <li><a href="#" class="active">Atracciones</a></li>
                     <li><a href="#">Dónde comer</a></li>
@@ -32,19 +32,19 @@
                 </ul>
             </nav>
             <!-- Responsive -->
-            <input type="checkbox" class="check" id="check" />
-            <label for="check" class="hamburger-button">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
             </label>
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="atracciones.html">Atracciones</a></li>
-                    <li><a href="#">Dónde comer</a></li>
-                    <li><a href="#">Dónde alojarse</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li style="--i:1"><a href="#" class="active">Atracciones</a></li>
+                    <li style="--i:2"><a href="#">Dónde comer</a></li>
+                    <li style="--i:3"><a href="#">Dónde alojarse</a></li>
+                    <li style="--i:4"><a href="#">Blog</a></li>
+                    <li style="--i:5"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
