@@ -102,19 +102,19 @@
   transition-duration: .3s;
 }
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
   opacity: 0;
   transform: translateX(-20px);
   transition-duration: .3s;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
   transform: translateY(18px) rotate(45deg);
   transition-duration: .3s;
   transform-origin: center;
 }
 
-#checkbox:checked + .toggle #bar3 {
+#checkbox:checked+.toggle #bar3 {
   transform: translateY(-18px) rotate(-45deg);
   transition-duration: .3s;
   transform-origin: center;
@@ -142,7 +142,8 @@
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
   z-index: 999;
-  display: block; /* Asegurar que el menú siempre esté presente en el DOM */
+  display: block;
+  /* Asegurar que el menú siempre esté presente en el DOM */
 }
 
 .mobile-menu ul {
@@ -327,6 +328,10 @@ footer .copyright {
 
 /* Celulares */
 @media (max-width: 480px) {
+  header figure {
+    width: 100px;
+  }
+
   #porQue .container {
     flex-direction: column;
   }

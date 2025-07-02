@@ -244,6 +244,10 @@ footer .copyright {
 
 /* Celulares */
 @media (max-width: 480px) {
+    header figure {
+        width: 100px;
+    }
+    
     .container-corto section :is(.txt, figure) {
         width: 100%;
     }

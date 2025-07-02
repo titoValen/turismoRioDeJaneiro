@@ -76,19 +76,19 @@ header .desktop-menu ul li a:active {
     transition-duration: .3s;
 }
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
     opacity: 0;
     transform: translateX(-20px);
     transition-duration: .3s;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
     transform: translateY(18px) rotate(45deg);
     transition-duration: .3s;
     transform-origin: center;
 }
 
-#checkbox:checked + .toggle #bar3 {
+#checkbox:checked+.toggle #bar3 {
     transform: translateY(-18px) rotate(-45deg);
     transition-duration: .3s;
     transform-origin: center;
