@@ -328,7 +328,7 @@ footer .copyright {
 
 /* Celulares */
 @media (max-width: 480px) {
-  header figure {
+  .presentacion header figure {
     width: 100px;
   }
 
