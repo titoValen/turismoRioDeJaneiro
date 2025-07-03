@@ -114,7 +114,7 @@ header .desktop-menu ul li a:active {
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
     z-index: 999;
-    display: block; /* Asegurar que el menú siempre esté presente en el DOM */
+    display: block;
 }
 
 .mobile-menu ul {
@@ -148,12 +148,45 @@ header .desktop-menu ul li a:active {
 
 #checkbox:checked~.mobile-menu {
     transform: translateX(0);
-    /* Menú visible */
 }
 
 #checkbox:checked~.mobile-menu ul li {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Itinerario */
+
+.container-corto nav {
+    margin: 0 2.5rem;
+}
+
+.container-corto nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-corto nav ul li {
+    width: 250px;
+}
+
+.container-corto nav ul li a {
+    display: block;
+    text-align: center;
+    background: var(--color-verde);
+    color: var(--color-blanco);
+    padding: 0.875rem 1.375rem;
+    border-radius: 4rem;
+    border: 2px solid var(--color-verde);
+    transition: .3s;
+}
+
+.container-corto nav ul li a:hover {
+    background: transparent;
+    color: var(--color-negro);
 }
 
 /* section */
