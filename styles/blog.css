@@ -111,7 +111,6 @@ header .desktop-menu ul li a:active {
     transition: transform 0.4s ease-in-out;
     z-index: 999;
     display: block;
-    /* Asegurar que el menú siempre esté presente en el DOM */
 }
 
 .mobile-menu ul {
@@ -145,12 +144,42 @@ header .desktop-menu ul li a:active {
 
 #checkbox:checked~.mobile-menu {
     transform: translateX(0);
-    /* Menú visible */
 }
 
 #checkbox:checked~.mobile-menu ul li {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Articulos */
+
+.container-corto .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.container-corto .blog-posts .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 350px;
+    height: fit-content;
+    min-height: 250px;
+    background: var(--color-celeste);
+    border-radius: 1rem;
+}
+
+.container-corto .blog-posts .post a {
+    background: var(--color-verde);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--color-blanco);
+    text-align: center;
 }
 
 /* Footer */
