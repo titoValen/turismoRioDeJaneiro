@@ -1,3 +1,15 @@
+.background {
+    background-image: url("../img/arena.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+    position: fixed;
+    inset: 0;
+}
+
 /* Header */
 
 header {
@@ -149,6 +161,21 @@ header .desktop-menu ul li a:active {
 #checkbox:checked~.mobile-menu ul li {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Presentación */
+
+:is(.container-corto main) h1, p {
+    text-align: center;
+    margin: .5rem;
+}
+
+.container-corto main h1 {
+    font-size: 3rem;
+}
+
+.container-corto main p {
+    font-size: 24px;
 }
 
 /* Articulos */
