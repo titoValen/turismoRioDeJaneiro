@@ -194,7 +194,7 @@ header .desktop-menu ul li a:active {
     display: flex;
     gap: 1rem;
     margin: 2.5rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container-corto section :is(.txt, figure) {
