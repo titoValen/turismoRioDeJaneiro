@@ -151,6 +151,64 @@ header .desktop-menu ul li a:active {
     transform: translateX(0);
 }
 
+/* Contenido */
+
+.container-corto section {
+    display: flex;
+    gap: 1rem;
+    margin: 3rem 2.5rem;
+    min-height: 100vh;
+}
+
+.container-corto section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.container-corto main :is(h1, p) {
+    text-align: center;
+}
+
+.container-corto main h1 {
+    font-size: 42px;
+    margin: .8rem 0;
+}
+
+.container-corto main p {
+    font-size: 1.5rem;
+}
+
+.container-corto section :is(.txt, figure) {
+    width: 50%;
+}
+
+.container-corto section .txt h2 {
+    font-size: 2.25rem;
+}
+
+.container-corto section .txt span {
+    font-size: 1.2rem;
+}
+
+.container-corto section .txt p {
+    font-size: 1.5rem;
+}
+
+.container-corto section figure {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.container-corto section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.container-corto section figure img:hover {
+    transform: scale(1.05);
+}
+
 /* Footer */
 
 footer {
