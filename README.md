@@ -14,10 +14,8 @@ La página contendra un home, un blog, atracciones, dónde comer, dónde alojars
 
 - Atraciones: La atracion tratara de que el usuario se pueda informar de que puede hacer en Río de Janiro y los lugares famosos que tiene que ir.
 
-- Dónde Comer: En está página estaran los restaurantes más famosos, lujosos arraigados de Río de Janeiro.
+- Dónde Comer: En está página estaran las comidas más destacadas y famosas para comer en Río de Janeiro.
 
-- Dónde Alojarse: En está página abra mucha información sobre los hoteles y lugares de alojamiento que recomendamos.
+- Dónde Alojarse: En esta página es sobre los lugares recomendados que ofrecemos en Río de Janeiro.
 
 - Contacto: En este apartado habrá un formulario de contacto, puede ser sobre algo que mejorar, sugerencias, etc; es para que el usuario tenga un contacto directo con nosotros.
-
-- Quienes Somos: En este apartado se dara una información sobre nosotros que habrá historia, quienes desarrollaron, etc.
